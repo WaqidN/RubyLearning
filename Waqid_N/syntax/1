@@ -1,0 +1,20 @@
+print <<EOF
+    ini coding ruby aku ke 1
+    dokumen pertama tentang baris string.
+EOF
+
+print <<"EOF";                # same as above
+    yang kedua tentang iii
+    dokumen tentang baris string.
+EOF
+
+print <<`EOC`                 # execute commands
+	echo hi there
+	echo lo there
+EOC
+
+print <<"foo", <<"bar"  # you can stack them
+	saya bilang foo.
+foo
+	saya bilang bar.
+bar
